@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anastasija — Software Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ================= HEADER (photo + info) — stays visible above the tabs at all times ================= -->
+  <div class="profile-header">
+    <div class="avatar-wrap">
+      <div class="avatar"></div>
+      <div class="avatar-note">A C, an E-flat, and a G walk into a bar.<br>The bartender says, “<a href="https://web.archive.org/web/20060506162726/http://davidduff.blogspot.com/2005/12/c-e-flat-and-g-go-into-bar.html" target="_blank" rel="noopener">Sorry, but we don't serve minors</a>.”</div>
+    </div>
+    <div class="profile-info">
+      <h1 class="name">Anastasija Ljubicic</h1>
+      <div class="role-line">Software Engineering Student</div>
+      <div class="role-line">Faculty of Electrical Engineering</div>
+      <div class="role-line">University of Belgrade</div>
+      <div class="email-line">Email: <a href="mailto:anastasijalju12@gmail.com">anastasijalju12@gmail.com</a></div>
+      <div class="email-line">GitHub: <a href="https://github.com/anastasijalju12" target="_blank" rel="noopener">[anastasijalju12]</a></div>
+      <div class="email-line">Linkedin: <a href="https://www.linkedin.com/in/anastasija-ljubicic-34325221a/" target="_blank" rel="noopener">[anastasija-ljubicic]</a></div>
+      <div class="email-line">CV: <a href="https://anastasijalju12.github.io/cv/cv.pdf" target="_blank" rel="noopener">Download CV</a></div>
+      <div class="email-line">Belgrade, Serbia</div>
+
+    </div>
+  </div>
+
+  <!-- ================= TAB BAR ================= -->
+  <div class="row">
+    <div class="toolbar label-bottom">
+      <div class="tab active" onclick="showContent(0)"><div class="tab-content" id="tab-content-0">Home</div></div>
+      <div class="tab" onclick="showContent(1)"><div class="tab-content" id="tab-content-1">Skills</div></div>
+      <div class="tab" onclick="showContent(2)"><div class="tab-content" id="tab-content-2">Projects</div></div>
+      <div class="tab" onclick="showContent(3)"><div class="tab-content" id="tab-content-3">Activities</div></div>
+      <div class="tab" onclick="showContent(4)"><div class="tab-content" id="tab-content-4">Hobbies</div></div>
+      <div class="tab" onclick="showContent(5)"><div class="tab-content" id="tab-content-5">Contact</div></div>
+    </div>
+  </div>
+
+  <!-- ================= CONTENT PANELS — showContent() toggles which one is visible ================= -->
+  <div class="content-panel active" id="panel-0">
+  <h2 class="panel-title">Home</h2>
+  <p>I'm a fourth-year Software Engineering student at the Faculty of Electrical
+  Engineering, University of Belgrade, enrolled in 2023. I like problems that
+  don't let go easily — the kind where you have to actually understand what's
+  happening underneath before anything makes sense, which is probably why I
+  keep ending up in distributed systems and consensus algorithms.</p>
+  <p>I move fast and get genuinely excited about new problems, whether that's a
+  hackathon with a 48-hour deadline or a research paper I've decided I need to
+  fully understand before writing a single line of code. Working through the original source myself is the kind of challenge I love.
+  I genuinely enjoy working in a team — it keeps me motivated and pushes me to think through problems differently than I would on my own.</p>
+</div>
+
+  <div class="content-panel" id="panel-1">
+  <h2 class="panel-title">Skills</h2>
+
+  <div class="skill-block">
+    <div class="skill-head"><span class="dot dist"></span><h3>Languages</h3></div>
+    <div class="pill-row">
+      <span class="pill">Python</span><span class="pill">C</span><span class="pill">C++</span>
+      <span class="pill">Java</span><span class="pill">C#</span><span class="pill">JavaScript</span><span class="pill">Go</span>
+    </div>
+  </div>
+
+  <div class="skill-block">
+    <div class="skill-head"><span class="dot dist"></span><h3>Distributed Systems</h3></div>
+    <div class="pill-row">
+      <span class="pill">Go</span><span class="pill">RPC</span><span class="pill">Concurrency</span><span class="pill">Consensus Algorithms</span>
+    </div>
+  </div>
+
+  <div class="skill-block">
+    <div class="skill-head"><span class="dot full"></span><h3>Web / Backend</h3></div>
+    <div class="pill-row">
+      <span class="pill">Django</span><span class="pill">Flask</span><span class="pill">SQLAlchemy</span>
+      <span class="pill">JWT</span><span class="pill">HTML</span><span class="pill">CSS</span>
+      <span class="pill">Bootstrap 5</span><span class="pill">JS / AJAX</span>
+    </div>
+  </div>
+
+  <div class="skill-block">
+    <div class="skill-head"><span class="dot full"></span><h3>Cloud &amp; Infrastructure</h3></div>
+    <div class="pill-row">
+      <span class="pill">Docker</span><span class="pill">Kubernetes</span><span class="pill">Redis</span>
+    </div>
+  </div>
+
+  <div class="skill-block">
+    <div class="skill-head"><span class="dot sys"></span><h3>Databases</h3></div>
+    <div class="pill-row">
+      <span class="pill">SQL</span><span class="pill">MySQL</span><span class="pill">MongoDB</span>
+      <span class="pill">Microsoft SQL Server</span><span class="pill">JDBC</span>
+      <span class="pill">Relational DB Design</span><span class="pill">Query Optimization</span>
+      <span class="pill">Stored Procedures &amp; Triggers</span><span class="pill">XML / XQuery</span>
+    </div>
+  </div>
+
+  <div class="skill-block">
+    <div class="skill-head"><span class="dot sys"></span><h3>CS Fundamentals</h3></div>
+    <div class="pill-row">
+      <span class="pill">Data Structures &amp; Algorithms</span><span class="pill">OOP</span>
+      <span class="pill">Design Patterns</span><span class="pill">Software Architecture</span>
+      <span class="pill">Operating Systems</span><span class="pill">Computer Networks</span>
+    </div>
+  </div>
+
+  <div class="skill-block">
+    <div class="skill-head"><span class="dot fin"></span><h3>ML / AI</h3></div>
+    <div class="pill-row">
+      <span class="pill">Neural Networks</span><span class="pill">CNNs</span><span class="pill">Fuzzy Logic</span>
+    </div>
+  </div>
+
+  <div class="skill-block">
+    <div class="skill-head"><span class="dot fin"></span><h3>Blockchain</h3></div>
+    <div class="pill-row">
+      <span class="pill">Ethereum Smart Contracts</span>
+    </div>
+  </div>
+
+  <div class="skill-block">
+    <div class="skill-head"><span class="dot dist"></span><h3>Software Process</h3></div>
+    <div class="pill-row">
+      <span class="pill">RUP</span><span class="pill">Agile</span><span class="pill">UML</span>
+      <span class="pill">StarUML</span><span class="pill">Testing</span><span class="pill">Selenium</span>
+    </div>
+  </div>
+
+  <div class="skill-block">
+    <div class="skill-head"><span class="dot full"></span><h3>Tools</h3></div>
+    <div class="pill-row">
+      <span class="pill">Git</span><span class="pill">Gerrit</span><span class="pill">Maven</span><span class="pill">MVC</span>
+    </div>
+  </div>
+
+</div>
+
+  <div class="content-panel" id="panel-2">
+  <h2 class="panel-title">Projects</h2>
+
+  <div class="pub">
+  <div>
+    <div class="pub-cat"><span class="dot sys"></span>Database Systems</div>
+    <h3>SQL Query Optimizer</h3>
+    <p class="desc">A cost-based query optimizer that parses and validates SQL, generates evaluation plans, chooses an algorithm for each selection, join, sort and projection, and estimates execution cost in block transfers. Implements nested-loop, block and index nested-loop, sort-merge and hash joins, B+ tree and hash indexes, and external merge sort — all under configurable buffer constraints.</p>
+    <div class="stack">Python · SQL · Query Optimization · Algorithms · JSON</div>
+  </div>
+  <div class="links"><a href="https://github.com/anastasijalju12/sql-query-optimizer" target="_blank" rel="noopener">code</a></div>
+</div>
+
+<div class="pub">
+  <div>
+    <div class="pub-cat"><span class="dot dist"></span>Distributed Systems</div>
+    <h3>Raft Consensus Algorithm</h3>
+    <p class="desc">Independent implementation of Raft — leader election, log replication, crash recovery via state persistence — built directly from the original Ongaro &amp; Ousterhout paper, with a problem structure inspired by MIT's 6.5840 coursework. No provided skeleton or reference solution.</p>
+    <div class="stack">Go · RPC · Concurrency · 10 self-written tests</div>
+  </div>
+  <div class="links"><a href="https://github.com/anastasijalju12/raft-consensus" target="_blank" rel="noopener">code</a></div>
+</div>
+
+<div class="pub">
+  <div>
+    <div class="pub-cat"><span class="dot dist"></span>Cloud &amp; Distributed Systems</div>
+    <h3>Investment Fund Platform</h3>
+    <p class="desc">A containerized microservices investment platform with REST APIs and JWT authentication, running across three service replicas on Kubernetes with persistent storage. Fund decisions are settled on-chain through Ethereum smart-contract voting with majority consensus.</p>
+    <div class="stack">Python / Flask · MongoDB · Redis · Docker · Kubernetes · Ethereum</div>
+  </div>
+  <div class="links">code</div>
+</div>
+
+<div class="pub">
+  <div>
+    <div class="pub-cat"><span class="dot fin"></span>FinTech / AI Integration</div>
+    <h3>Orizonte — AML Sanctions Screening</h3>
+    <p class="desc">A three-layer AML compliance platform for screening global SWIFT transfers: traditional sanctions-list screening, an OSINT AI agent investigating flagged individuals across the open web, and a predictive layer flagging high-risk countries ahead of official sanctions updates. Built at Sokin Hackathon.</p>
+    <div class="stack">Python · Flask · React · SerpAPI · Perplexity Sonar</div>
+  </div>
+  <div class="links"><a href="https://github.com/anastasijalju12/fintech-hackathon" target="_blank" rel="noopener">hackathon</a></div>
+</div>
+
+<div class="pub">
+  <div>
+    <div class="pub-cat"><span class="dot dist"></span>IoT / Embedded Systems</div>
+    <h3>Smart Home Thermostat — SCADA System<span class="mono" style="font-size:11px; color:#fff; background:var(--ms-green); padding:2px 8px; border-radius:20px; margin-left:6px;">2nd Place</span></h3>
+    <p class="desc">A Raspberry Pi 3-based smart thermostat prototype that automatically regulates room temperature based on occupancy, window state, and current conditions, monitored and controlled through a web-based SCADA dashboard. Sensor and actuator communication runs over MQTT (Mosquitto broker); readings are logged to a time-series database and visualized with real-time charts, alarms, and an interactive floor-plan view. Built at EESTech Challenge 2025 as a three-person team.</p>
+    <div class="stack">Raspberry Pi 3 · Python · Flask · WebSocket · MQTT (Mosquitto) · InfluxDB · Grafana · Angular</div>
+  </div>
+  <div class="links"><a href="https://github.com/anastasijalju12/Home_IoT_Automation" target="_blank" rel="noopener">hackathon</a></div>
+</div>
+
+<div class="pub">
+  <div>
+    <div class="pub-cat"><span class="dot full"></span>Full-stack Web Development</div>
+    <h3>Compass</h3>
+    <p class="desc">A platform for assessing student readiness for IT careers — skill-gap analysis, internship listings, personalized career-path recommendations. Built with a team of four across the full SDLC: requirements, prototyping, database modeling, UML, and unit/Selenium testing. Ongoing.</p>
+    <div class="stack">Python / Django · MySQL · JS / AJAX · Git</div>
+  </div>
+  <div class="links"><a href="https://github.com/anastasijalju12/full-stack-compass" target="_blank" rel="noopener">code</a></div>
+</div>
+
+<div class="pub">
+  <div>
+    <div class="pub-cat"><span class="dot sys"></span>Database Systems</div>
+    <h3>Movie Rating Platform</h3>
+    <p class="desc">A database-backed movie rating platform with personalized recommendations and genre-based user profiling. Rating validation, reward assignment, and automatic trend detection run database-side through stored procedures and triggers rather than in application code.</p>
+    <div class="stack">Java · Microsoft SQL Server · JDBC / JPA · SQL</div>
+  </div>
+  <div class="links"><a href="https://github.com/anastasijalju12/movie-rating-platform" target="_blank" rel="noopener">code</a></div>
+</div>
+
+<div class="pub">
+  <div>
+    <div class="pub-cat"><span class="dot full"></span>Web Development</div>
+    <h3>Eagle Travel — Travel Agency Website</h3>
+    <p class="desc">A front-end travel agency website with browsable destinations and booking-style pages.</p>
+    <div class="stack">HTML · CSS · JavaScript · Bootstrap 5</div>
+  </div>
+  <div class="links"><a href="https://github.com/anastasijalju12/travel-agency-website" target="_blank" rel="noopener">code</a></div>
+</div>
+
+<div class="pub">
+  <div>
+    <div class="pub-cat"><span class="dot sys"></span>Systems Programming</div>
+    <h3>Simplified CLI</h3>
+    <p class="desc">A CLI interpreter supporting command parsing, pipes, and file I/O redirection — echo, time, date, touch, wc, tr, head, rm, truncate, prompt, batch, and friends.</p>
+    <div class="stack">C++ · OOP</div>
+  </div>
+  <div class="links"><a href="https://github.com/anastasijalju12/cli-interpreter" target="_blank" rel="noopener">code</a></div>
+</div>
+
+<div class="pub">
+  <div>
+    <div class="pub-cat"><span class="dot sys"></span>Algorithms &amp; Data Structures</div>
+    <h3>Core Algorithms Collection</h3>
+    <p class="desc">A set of course projects covering fundamental data structures and algorithms from scratch: min-heap and max-heap implementations, a backtracking-based Sudoku solver, a dictionary/lexicon management system, and pathfinding search algorithms.</p>
+    <div class="stack">C</div>
+  </div>
+  <div class="links">
+    <span>code</span>
+  </div>
+</div>
+
+<div class="pub">
+  <div>
+    <div class="pub-cat"><span class="dot sys"></span>Computer Architecture</div>
+    <h3>Assembly Programming</h3>
+    <p class="desc">Low-level programming exercises working directly with processor architecture and instruction sets.</p>
+    <div class="stack">Assembly</div>
+  </div>
+  <div class="links">
+    <span>code</span>
+  </div>  
+</div>
+
+<div class="pub">
+  <div>
+    <div class="pub-cat"><span class="dot dist"></span>Concurrent Systems</div>
+    <h3>Multithreaded Air Traffic Simulator</h3>
+    <p class="desc">An airport and flight traffic simulation where each flight runs as an independent thread with synchronized scheduling and real-time visualization.</p>
+    <div class="stack">Java · AWT</div>
+  </div>
+  <div class="links"><a href="https://github.com/anastasijalju12/multithreaded-air-traffic-simulator" target="_blank" rel="noopener">code</a></div>
+</div>
+
+<div class="pub">
+  <div>
+    <div class="pub-cat"><span class="dot fin"></span>Machine Learning &amp; Deep Learning</div>
+    <h3>Pothole &amp; Crack Detection CNN</h3>
+    <p class="desc">A computer vision model for detecting potholes and cracks in asphalt, trained on a Kaggle dataset, focusing on model design, training pipeline, and optimization (~99% validation accuracy).</p>
+    <div class="stack">Python · CNN</div>
+  </div>
+  <div class="links">code</div>
+</div>
+
+  </div>
+
+  <div class="content-panel" id="panel-3">
+    <h2 class="panel-title">Activities</h2>
+
+    <div class="talk-row">
+      <div class="talk-title"><span class="dot"></span>On-site Event Coordination &amp; Operational Support</div>
+      <div class="talk-meta">SINERGIJA 2026 Conference</div>
+    </div>
+
+    <div class="talk-row">
+      <div class="talk-title"><span class="dot"></span>Logistics Team Member — International Congress</div>
+      <div class="talk-meta">EESTEC LC Belgrade</div>
+    </div>
+
+    <div class="talk-row">
+      <div class="talk-title"><span class="dot"></span>Case Study Competition — Marketing (4th / 15 teams)</div>
+      <div class="talk-meta">EKOF Academy</div>
+    </div>
+
+  </div>
+
+  <div class="content-panel" id="panel-4">
+  <h2 class="panel-title">Hobbies</h2>
+
+  <div class="hobby-block">
+    <div class="hobby-head"><span class="dot"></span><h3>Racing</h3></div>
+    <ul class="hobby-list">
+      <li>Avala Trail 2024 — 10km — 3rd place in the Junior category</li>
+      <li>Tribalion Tornik 2024 — 23km, 35 obstacles — 3rd team place</li>
+      <li>Tribalion Tara 2024 — 10km</li>
+      <li>Invictus OCR Fruska Gora 2024 — 19km, 30 obstacles</li>
+    </ul>
+  </div>
+
+  <div class="hobby-block">
+    <div class="hobby-head"><span class="dot"></span><h3>Organization of Activities</h3></div>
+    <ul class="hobby-list">
+      <li>I frequently organize gatherings and sports activities, such as volleyball, games, and themed evenings, for larger groups of people.</li>
+    </ul>
+  </div>
+
+  <div class="hobby-block">
+    <div class="hobby-head">
+      <span class="dot"></span>
+      <h3>Music</h3>
+      <span class="hobby-meta">Sep 2012 – Jun 2018</span>
+    </div>
+    <ul class="hobby-list">
+      <li>“Davorin Jenko” Music School — Instrument: Accordion — Belgrade, Serbia</li>
+    </ul>
+  </div>
+
+</div>
+
+  <div class="content-panel" id="panel-5">
+  <h2 class="panel-title">Contact</h2>
+
+  <div class="contact-list">
+    <div class="contact-row">
+      <span class="contact-label">Email</span>
+      <span class="contact-value"><a href="mailto:anastasijalju12@gmail.com">anastasijalju12@gmail.com</a></span>
+    </div>
+    <div class="contact-row">
+      <span class="contact-label">GitHub</span>
+      <span class="contact-value"><a href="https://github.com/anastasijalju12" target="_blank" rel="noopener">[anastasijalju12]</a></span>
+    </div>
+    <div class="contact-row">
+      <span class="contact-label">Linkedin</span>
+      <span class="contact-value"><a href="https://www.linkedin.com/in/anastasija-ljubicic-34325221a/" target="_blank" rel="noopener">[anastasija-ljubicic]</a></span>
+    </div>
+    <div class="contact-row">
+      <span class="contact-label">CV</span>
+      <span class="contact-value"><a href="https://anastasijalju12.github.io/cv/cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a></span>
+    </div>
+    <div class="contact-row">
+      <span class="contact-label">Address</span>
+      <span class="contact-value">Belgrade, Serbia</span>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<script>
+  function showContent(index) {
+    document.querySelectorAll('.tab').forEach(function(tab, i){
+      tab.classList.toggle('active', i === index);
+    });
+    document.querySelectorAll('.content-panel').forEach(function(panel, i){
+      panel.classList.toggle('active', i === index);
+    });
+  }
+</script>
+
+</body>
+</html>
